@@ -1,0 +1,13 @@
+name: bike_sales_webapp2
+title: bike_sales_webapp
+username:
+account: ml-ai-hub-applications
+server: posit.cloud
+hostUrl: https://api.shinyapps.io/v1
+appId: 9356366
+bundleId: 7381750
+url: https://posit.cloud/content/6134328
+when: 1687560300.80402
+lastSyncTime: 1687560300.80402
+asMultiple: FALSE
+asStatic: FALSE
