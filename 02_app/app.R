@@ -123,6 +123,7 @@ ui <- navbarPage(
             ),
             grid_card(
                 area = "area4",
+                tags$caption(h4("Top 3 Locations and BikeShops by Sales")),
                 tableOutput("geo_summary")
             )
         )
@@ -185,10 +186,11 @@ server <- function(input, output) {
             
             group_by(state, city, bikeshop_name) %>%
             summarise(Total_Sales = sum(total_price)) %>%
+            ungroup() %>%
             arrange(desc(Total_Sales)) %>%
             mutate(sales_text = scales::dollar(Total_Sales)) %>%
-            select(c(1,2,3,5)) %>%
-            top_n(3)
+            select(c( state, city, bikeshop_name, sales_text)) %>%
+            slice_head(n = 3)
         
         colnames(summary_table) <- c("State", "City", "BikeShop", "Total Sales")
         
@@ -199,7 +201,7 @@ server <- function(input, output) {
                     sides = list("top", "bottom"),
                     color = "#3c2e50",
                     style = "solid",
-                    weight = px(1.5)
+                    weight = px(1.0)
                 ),
                 locations = cells_body(
                     rows = everything()

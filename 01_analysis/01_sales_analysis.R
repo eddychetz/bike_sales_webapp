@@ -10,7 +10,7 @@ library(timetk)
 
 source(here::here("00_scripts/utilities.R"))
 
-processed_data_tbl <- read_csv(here::here("./00_data/bike_sales/data_wrangled_student/bike_orderlines.csv"))
+processed_data_tbl <- read_csv(here::here("./00_data/bike_orderlines.csv"))
 processed_data_tbl
 
 #  USER SELECTIONS ----
@@ -56,5 +56,5 @@ processed_data_filtered_tbl %>%
     ungroup() %>%
     arrange(desc(Total_Sales)) %>%
     mutate(sales_text = scales::dollar(Total_Sales)) %>%
-    select(c(1,2,3,5)) %>%
-    top_n(3)
+    select(c( state, city, bikeshop_name, sales_text)) %>%
+    slice_head(n = 5)
