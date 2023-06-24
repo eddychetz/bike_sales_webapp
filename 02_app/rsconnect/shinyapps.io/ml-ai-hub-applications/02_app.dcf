@@ -1,0 +1,13 @@
+name: 02_app
+title: 02_app
+username:
+account: ml-ai-hub-applications
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9356433
+bundleId: 7381788
+url: https://ml-ai-hub-applications.shinyapps.io/02_app/
+when: 1687561658.06946
+lastSyncTime: 1687561658.06947
+asMultiple: FALSE
+asStatic: FALSE
