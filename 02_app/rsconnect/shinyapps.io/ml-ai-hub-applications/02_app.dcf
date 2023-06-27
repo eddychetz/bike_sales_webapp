@@ -5,9 +5,10 @@ account: ml-ai-hub-applications
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9356433
-bundleId: 7383647
+bundleId: 7392702
 url: https://ml-ai-hub-applications.shinyapps.io/02_app/
-when: 1687626311.63147
-lastSyncTime: 1687626311.63149
+when: 1687862378.65778
+lastSyncTime: 1687862378.65779
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: posit_cloud_deploy.R|shinyapps_deploy.R
