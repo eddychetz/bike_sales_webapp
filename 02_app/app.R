@@ -4,6 +4,7 @@ library(ggplot2)
 library(gridlayout)
 library(gt)
 library(gtExtras)
+library(rsconnect)
 
 # LIBRARIES ----
 
@@ -15,7 +16,7 @@ library(plotly)
 library(timetk)
 
 # SCRIPTS ----
-# source(here::here("./02_app/sp"))
+source(here::here("./02_app/utilities.R"))
 source(here::here("./02_app/shinyapps_deploy.R"))
 source(here::here("./02_app/theme_specialized.R"))
 

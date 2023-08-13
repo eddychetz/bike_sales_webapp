@@ -102,7 +102,7 @@ start_date = as_date("2014-01-01") # input$date_range[1]
 end_date = as_date("2016-12-01") # input$date_range[2]
 
 summary_text <- processed_data_filtered_tbl %>%
-    mutate(sales_1= scales::)
+   
     group_by(state, city, bikeshop_name) %>%
     
     summarise(Total_Sales = sum(total_price)) %>%
@@ -124,3 +124,13 @@ sales_2 <- summary_text$Total_Sales[2]
 
 glue::glue("In the period from {start_date} to {end_date}, the top two cities with the highest total sales in their bikeshops were {city_1} and {city_2}. The leading bikeshop in {city_1} was called {shop_1} which generated impressive total sales of {sales_1}. Meanwhile, {city_2} boasted the {shop_2} accumulating significant sales of {sales_2}. These two cities and their bikeshops played a crucial role in the biking industry during the mentioned timeframe, contributing significantly to the overall success and growth of the market.")
 
+# Orders
+nrow(processed_data_filtered_tbl$order_line)
+
+# Sales
+processed_data_filtered_tbl %>%
+    select(total_price) %>%
+    sum()
+
+# Ratio
+nrow(processed_data_filtered_tbl$category_1 == "Mountain") / nrow(processed_data_filtered_tbl$category_1 == "Road")
