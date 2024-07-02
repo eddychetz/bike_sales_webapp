@@ -1,0 +1,14 @@
+name: bike_sales
+title: bike_sales
+username:
+account: ml-ai-hub-applications
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10218638
+bundleId: 7814533
+url: https://ml-ai-hub-applications.shinyapps.io/bike_sales/
+when: 1697553944.6883
+lastSyncTime: 1697553944.68831
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app_02.R

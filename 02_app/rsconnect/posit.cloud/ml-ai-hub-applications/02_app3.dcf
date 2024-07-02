@@ -3,12 +3,10 @@ title: 02_app
 username:
 account: ml-ai-hub-applications
 server: posit.cloud
-hostUrl: https://api.shinyapps.io/v1
-appId: 9382034
-bundleId: 7400346
+hostUrl: https://api.posit.cloud/v1
+appId: 6153299
+bundleId: 7596163
 url: https://posit.cloud/content/6153299
-when: 1688009351.31312
-lastSyncTime: 1688009351.31313
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: posit_cloud_deploy.R|requirements.R|shinyapps_deploy.R

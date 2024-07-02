@@ -123,7 +123,7 @@ ui <- navbarPage(
                 plotlyOutput(
                     outputId = "timeseries_plot",
                     width    = "100%",
-                    height   = "25%"
+                    height   = "80%"
                 )
             ),
             
